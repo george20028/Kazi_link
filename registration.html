@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+
+
+<body>
+    <div class="form-container" id="register-form">
+        <form action="Signup.php" method="post">
+        <h2>Register</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Official Name"required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"placeholder="youremail@gmail.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Confirm Password</label>
+                <input type="password" id="password" name="conpassword" placeholder="Re-enter your password" required/>
+            </div>
+            
+            <div class="form-group">
+                     <label for="phone">Phone</label>
+                     <input type="text" id="phone" name="phone" required placeholder="07xxxxxxxx"
+            </div>
+            
+            <div class="form-group">
+                <label for="role">User Role:</label>
+                <select name="role" id="role">
+                    <option value="customer">Customer</option>
+                    <option value="electrician">Electrician</option>
+                    <option value="plumber">Plumber</option>
+                    <option value="carpenter">Carpenter</option>
+                    <option value="janitor">Janitor</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <button type="registrationSubmit">Register</button>
+            </div>
+
+            <div class="form-group">
+                <button onclick="window.location.href = 'login.php';">Back</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    /*min-width:1068px;*/
+    width: 100%;
+    margin: auto; /* Horizontally centers the form */
+    display: flex; /* Set display to flex */
+    justify-content: center; /* Horizontally centers children */
+    align-items: center; /* Vertically centers children */
+    flex-direction: column;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.form-group label {
+    display: block;
+    }
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    color: #333;
+    font-size: 14px;
+}
+.form-group-search {
+    display: flex;
+    align-items: center;
+}
+.search-bar {
+    flex: 1;
+    margin-right: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    color: #333;
+    font-size: 14px;
+}
+.search-button {
+    flex-shrink: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-group button {
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button,
+search-button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    width: 70%;
+    background: beige;
+    border-radius: 6px;
+    text-align: center;
+    padding: 30px;
+    color: #333;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 100%;
+    padding: 10px 0;
+    background: #007bff;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
+
+.popup img {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+   .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        #profile-picture {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+.news-container {
+    margin: 20px;
+}
+
+.news-card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    border: 1px solid #ccc; /* Add border */
+    flex-direction: row; /* Change flex direction to row */
+    align-items: center; /* Center align items vertically */
+}
+
+.news-card img {
+    max-width: 50%; /* Set the image width to take 50% of the card */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add some space between the image and text */
+    border-radius: 8px;
+}
+
+.news-card-content {
+    flex-grow: 1; /* Allow the content to grow to fill available space */
+}
+
+.news-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px; /* Adjust font size */
+}
+
+.news-card p {
+    margin-bottom: 10px;
+    font-size: 16px; /* Adjust font size */
+}        

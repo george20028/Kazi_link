@@ -1,0 +1,39 @@
+.content {
+    text-align: center;
+    background-color: beige;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensures the positioning of the image and description */
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: flex; /* Ensures the image behaves properly */
+    margin: 0 auto 20px; /* Centers the image and adds some space below it */
+}
+
+.image-description {
+    position:relative;
+    bottom: 20px; /* Adjust this value to position the description properly */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:beige; /* Adjust the background color and opacity */
+    padding: 10px;
+    border-radius:1px;
+    max-width: 100%;
+    text-align: left;
+}
+
+.image-description p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333; /* Adjust the color of the description text */
+}
+.content h2,h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
